@@ -51,7 +51,7 @@ a.nav-link.active {
     width: 200px;
     height: 200px;
     margin: -100px 0 0 -100px;
-    border: 50px solid #f3f3f3;
+    border: 50px solid #E50914;
     border-radius: 50%;
     border-top: 50px solid #E50914;
     -webkit-animation: spin 2s linear infinite;

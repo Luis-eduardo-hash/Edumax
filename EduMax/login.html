@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduMax - Login</title>
+    <link rel="shortcut icon" href="img/traced-Logo.png" type="image/x-icon" /> 
+        
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css"/>
   </head>
+
   <body class="bg-dark">
+    <div class="loader"></div>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <b class="text-light">EduMax</b>
+        <a class="navbar-brand" href="index.html" >
+          <img 
+            src="./img/traced-Logo.png"
+            alt="Logo"
+            width="150"
+            class="logo"
+            />
         </a>
       </div>
     </nav>
     <main class="min-vh-100">
+<!--Banner-->
       <div class="full-banner opacity-50 min-vh-100"></div>
+      
       <div class="container position-absolute min-vh-100 pos-0">
         <div class="row min-vh-100 align-items-center">
-          <form id="login" class="col-xl-4 col-lg-6 col-md-8 col-sm-10 p-5 mx-auto">
+          <form 
+          id="login" 
+          class="col-xl-4 col-lg-6 col-md-8 col-sm-10 p-5 mx-auto"
+          >
           <h2 class="mb-4 fw-bold text-white">Entrar</h2>
-        <input id="email"
-        type="email" class="form-control rounded-2 bg-transparent text-white p-2 mb-3" placeholder="Email de Acesso"
+        <input id="text" 
+          type="text" 
+          class="form-control rounded-2 bg-transparent text-white p-2 mb-3" 
+          placeholder="Email ou Nome"
         />
         
-        <input id="senha"
-        type="password" class="form-control rounded-2 bg-transparent text-white p-2 mb-3" placeholder="Senha">
-        
-        <input type="button" value="Entrar" class="btn btn-danger w-100 py-2" 
-            onclick="login()">
+        <input 
+          id="senha"
+          type="password" class="form-control rounded-2 bg-transparent text-white p-2 mb-3" 
+          placeholder="Senha"
+          />
+        <input
+          value="Entrar" 
+          class="btn btn-danger w-100 py-2" 
+          onclick="window.location.href= 'index.html'"
+            />
           <div class="col text-center my-3 mb-5">
             <a href="#" class="text-white text-decoration-none">Esqueceu a senha?</a>
           </div>
           <div class="form-check d-flex align-itens-end ms-2">
-            <input type="checkbox" id="rememberMe" class="form-check-input bg-transparent fs-4 rounded-1 border-secondary" checked>
-            <label for="rememberMe" class="form-check-label text-white ms-2">Manter Conectado</label>
+            <input  
+              id="rememberMe"
+              type="checkbox" 
+              class="form-check-input bg-transparent fs-4 rounded-1 border-secondary"
+              value=""
+              checked
+              />
+            <label for="rememberMe" class="form-check-label text-white ms-2">
+              Manter Conectado
+            </label>
           </div>
           <div class="col my-3 p-0">
             <spam class="texte-sencondary">Novo por aqui?</spam> 
-            <a href="#" class="text-white text-decoration-none">Assine já</a>
+            <a href="#" class="text-white text-decoration-none">
+              Assine já
+            </a>
           </div>
           <div class="col p-0">
             <p class="texte-secondary" style="font-size: 12px">
@@ -54,13 +87,7 @@
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function login() {
-        let email = document.getElementById("email").value;
-        let senha = document.getElementById("senha").value;
-        console.log("Email = ", email);
-        alert("Login");
-      }
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

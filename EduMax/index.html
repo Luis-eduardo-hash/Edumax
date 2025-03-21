@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesX</title>
+    <link rel="shortcut icon" href="img/traced-Logo.png" type="image/x-icon"
+    />
+    <link 
+      href="https://cnd.jsdelivr.net/npm/bootstrap@5" 
+      rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/main.css"/>
+      <link rel="stylesheet" href="css/index.css"/>
+      </head>
+    
+<body>
+    <div class="loader"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img
+            src="./img/traced-Logo.png"
+            alt="Logo"
+            width="150"
+            class="logo"
+            />
+        </a>
+        <button 
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="false"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+            >Home</a
+            >
+          </li>
+          <li>
+            <a class="btn btn-danger ms-sm-3 text-white" href="login.html"
+            >Entrar</a
+            >
+          </li>
+        </ul>
+       </div>
+      </div>
+    </nav>
+    <!--Banner-->
+    <div class="container-fluid p-0">
+     <div
+      id="carouselBanner"
+      class="carousel slide carousel-light carousel-fade"
+      data-bs-ride="carousel"
+      >
+    <div id="carousel-home" class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="8000">
+        <img
+        src="img/index_files/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg"
+        class="d-block w-100"
+        alt="Batmam O Cavaleiros das Trevas"
+        />
+    <div class="carousel-caption d-md-block">
+        <h3>Batmam O Cavalheiro das Trevas</h3>
+        <p class="d-none d-mbdblock">
+            Batman tem conseguido manter a ordem em Gotham com a ajuda de Jim Gordon e Harvey Dent.
+            No entanto, um jovem e anárquico criminoso, conhecido apenas como Coringa, pretende 
+            testar o Cavaleiro das Trevas e mergulhar a cidade em um verdadeiro caos.
+        </p>
+   </div>
+  </div>
+ <div class="carousel-item" data-bs-interval="8000">
+   <img
+    src="img/index_files/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg"
+    class="d-block w-100"
+    alt="A Viagem de Chihiro"
+   />
+   <div class="carousel-caption d-md-block">
+     <h3>A Viajem de Chihiro</h3>
+     <p class="d-none d-md-block">
+        Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai 
+        decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja 
+        por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se 
+        transformam em porcos. Agora, apenas Chihiro pode salvá-los.
+
+     </p>
+   </div>
+  </div>
+    <div class="carousel-item" data-bs-interval="8000">
+      <img
+         src="img/index_files/4LPIIwWiedwHeWgRXOjcBaL1tnv.jpg"
+         class="d-block w-100"
+         alt="Ameaça no Ar"
+         />
+         <div class="carousel-caption d-md-block">
+            <h3>Ameaça no Ar</h3>
+            <p class="d-none d-md-block">
+                Um agente federal norte-americano embarca em um pequeno avião para transferir 
+                uma testemunha do governo para Nova York. Enquanto atravessam a região selvagem
+                do Alasca, as tensões começam a aumentar - nem todos no voo são quem aparentam ser.
+            </p>
+        </div>    
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselBanner"
+      data-bs-slide="prev"
+      >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+        <button
+           class="carousel-control-next"
+           type="button"
+           data-bs-target="#carouselBanner"
+           data-bs-slide="next"
+           >
+
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+ </div>  
+    <!--Banner end-->
+ 
+    <div class="container my-5 px-5">
+
+     <div class="row ">
+        <h4 class="text-white">Filmes em Destaque</h4>
+        <div id="trendingMovies" class="rowposter mt-3 p-2"></div>
+    </div>
+
+    <div class="row mt-5">
+      <h4 class="text-white">Filmes com Melhores Avaliações</h4>
+      <div id="topRateMovies" class="rowposter mt-3 p-2"></div>
+    </div>
+  </div>
+  
+  <script src="https:cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+
+ </body>
+</html>
